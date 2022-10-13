@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*{margin: 0;padding: 0;box-sizing: border-box;}*/
+        * {
+            text-decoration: none;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            outline: none;
+        }
+
+        body {
+            padding: 0px 0px;
+            background:rgb(0, 0, 0);
+            margin: 0px 20px;
+        }
+
+        .parrafo-img {
+            text-align: center;
+            font-size: 20PX;
+            background-color: rgb(212, 205, 205);
+        }
+
+        .nav a:hover {
+            background-color: #00ffff;
+            height: 30px;
+            padding: 10PX;
+            border-radius: 20PX;
+        }
+
+        .toggle-menu a {
+            height: 3px;
+            background-color: black;
+            margin-bottom: 4px;
+            display: table;
+            width: 25px;
+        }
+
+        .toggle-menu a:last-child {
+            margin-bottom: 0px;
+        }
+
+        .input[type=checkbox],
+        label {
+            display: none;
+        }
+
+        .cta {
+            display: inline-block;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin: 10px;
+            padding: 10px 10px;
+        }
+
+        a {
+            color: rgb(0, 0, 0);
+        }
+
+        .texto-about {
+            grid-column: 4/10;
+            text-align: center;
+        }
+
+        .aside {
+            text-align: center;
+            width: 100%;
+            color: aliceblue;
+        }
+
+        .footer {
+            text-align: center;
+            width: 100%;
+            font-size: 15px;
+            color: aliceblue;
+        }
+
+        /*label {color: blue;font-size: 20px;}*/
+        input,
+        textarea {
+            border: 5px solid #7ac000;
+            font-size: 20px;
+            text-align: center;
+            padding: 8px;
+            width: 500px;
+        }
+
+        input:focus,
+        textarea:focus {
+            border: 4px solid #ff5400;
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        input[type="submit"] {
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            background-color: #7ac000;
+            width: 200px;
+            color: #00ffff;
+        }
+
+        input[type="submit"]:hover {
+            color: rgb(0, 0, 0);
+            background-color: #09ff00;
+        }
+
+        /*###############*/
+        .slider {
+            width: 90%;
+            height: 400px;
+            text-align: center;
+            margin: 10px auto 0;
+            overflow: hidden;
+        }
+
+        .slider ul {
+            text-align: center;
+            display: flex;
+            padding: 0;
+            width: 400%;
+            animation: slide 15s infinite linear;
+        }
+
+        .slider img {
+            width: 90%;
+            height: 400px;
+            text-align: center;
+        }
+
+        @keyframes slide {
+            0% {
+                margin-left: 0;
+            }
+
+            20% {
+                margin-left: 0;
+            }
+
+            25% {
+                margin-left: -100%;
+            }
+
+            45% {
+                margin-left: -100%;
+            }
+
+            50% {
+                margin-left: -200%;
+            }
+
+            70% {
+                margin-left: -200%;
+            }
+
+            75% {
+                margin-left: -300%;
+            }
+
+            100% {
+                margin-left: -300%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <div style="display: grid;grid-template-columns: repeat(12, 1fr);background-image: url(static/images/hero-bg.jpg);width: 100%;height: 100%;align-items: center;">
+        <div style="grid-column: 4/4;">
+            <img style="padding: 10px;width:40px;height: 40px;" src="static/logop.png">
+        </div>
+        <div style="grid-column: 5/12;gap: 30px;display: flex;height: 50px;align-items: center;padding-right: 20px;">
+            <a style="" href="productos/producto1.html">INICIO</a>
+            <a style="" href="productos/producto1.html">ACERCA DE:</a>
+            <a style="" href="productos/producto1.html">CONTACTOS</a>
+            <a style="" href="productos/producto1.html">TODOS LOS POSTRES</a>
+            <a style="width:120px;height:50px;background-color: #ff5400;border-radius:10px;" href="productos/producto1.html"><h3 style="text-align:center;padding:4px;">Download CV</h3></a>
+        </div>
+        
+        <div style="grid-column: 1/1;padding-left:50px;">
+            <img style="width:80px; height:80px" src="static/fb.png" alt="">
+            <img style="width:80px; height:80px" src="static/tui.png" alt="">
+            <img style="width:80px; height:80px" src="static/you.png" alt="">
+            <img style="width:80px; height:80px" src="static/inst.png" alt="">
+        </div>
+
+        <div>
+            <img style="grid-column: 1/2;height: 250px;width: 250px;margin-left: 200px;padding: 10px;"
+                src="static/andres.jpg" alt="">
+                <div style="grid-column: 1/2;display: flex;padding-left: 250px;">
+                    <img style="height: 50px;width: 50px;" src="static/wa.png">
+                    <p style="width:100px;display: flex;">0961655965 044619285</p>
+                </div>
+            </div>
+        <div style="grid-column: 4/11;text-align: center;">
+            <h1 style="color:rgb(1, 38, 250);">DAVE GARCIA</h1>
+            <h1>INGENIERO EN SISTEMAS</h1>
+            <h2>WEB - ANDROID - INTELIGENCIA ARTIFICIAL</h2>
+            <h3>FRONTEND</h3>
+            <a href="" class="cta">contactame</a>
+        </div>
+        <!--<img style="grid-column: 4/12;height: 320px;border: 10px solid gold;border-radius: 10px;"
+            src="static/img-comidas/98.jpg">-->
+    </div>
+
+    <div class="slider">
+        <ul>
+            <img src="static/images/blog-1.jpg" alt="">
+            <img src="static/images/blog-2.jpg" alt="">
+            <img src="static/images/blog-3.jpg" alt="">
+            <img src="static/images/blog-1.jpg" alt="">
+        </ul>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center;color: #00ffff;">EXPERIENCIA EN TECNOLOGIAS:</h1>
+    <h1 style="text-align: center;color: #00ffff;">DATABASES</h1>
+    <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:15px;margin:30px 30px">
+        <div style="display:flex;grid-column:2/10 ;gap:10px">
+        <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/mongo1.png" alt="">
+            <p class="parrafo-img">MONGO_DB</p>
+        </a>
+        <a href="productos/producto1.html"><img style="height:100px;width: 100%;" src="static/post1.jpg" alt="">
+            <p class="parrafo-img">POSGREST</p>
+        </a>
+        <a href="productos/producto1.html"><img style="height:100px;width: 100%;" src="static/mysql1.jpg" alt="">
+            <p class="parrafo-img">MYSQL</p>
+        </a>
+        <a href="productos/producto1.html"><img style="height:100px;width: 100%;" src="static/oracle2.png" alt="">
+            <p class="parrafo-img">ORACLE</p>
+        </a>
+        <a href="productos/producto1.html"><img style="height:100px;width: 100%;" src="static/phpmy.png" alt="">
+            <p class="parrafo-img">PHP_MY_ADMIN</p>
+        </a>
+        <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/apache_cassandra_830.png" alt="">
+            <p class="parrafo-img">APACHE CASANDRA</p>
+        </a>
+        <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/sql.jpg" alt="">
+            <p class="parrafo-img">SQL_SERVER</p>
+        </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center;color: #00ffff;">LENGUAJES DE PROGRAMACION</h1>
+    <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:15px;margin:30px 30px;">
+        <div style="display:flex;grid-column:2/10 ;gap:10px">
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/python1.png" alt="">
+                <p class="parrafo-img">PYTHON</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/java1.png" alt="">
+                <p class="parrafo-img">JAVA</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/PHP-logo.svg.png" alt="">
+                <p class="parrafo-img">PHP</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/javascritp1.png" alt="">
+                <p class="parrafo-img">JAVASCRIPT</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/kotlin1.png" alt="">
+                <p class="parrafo-img">KOTLIN</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/html3.jpg" alt="">
+                <p class="parrafo-img">HTML - CSS</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/python1.png" alt="">
+                <p class="parrafo-img">PYTHON</p>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+        <h1 style="text-align: center;color: #00ffff;">FRAMEWORKS Y OTROS</h1>
+    <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:15px;margin:30px 30px;">
+        <div style="display:flex;grid-column:2/10 ;gap:10px">
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/flask1.png" alt="">
+                <p class="parrafo-img">FLASK</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/django1.png" alt="">
+                <p class="parrafo-img">DJANGO</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/docker1.png" alt="">
+                <p class="parrafo-img">DOCKER</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/laravel1.jpg" alt="">
+                <p class="parrafo-img">LARAVEL</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/react1.png" alt="">
+                <p class="parrafo-img">REACT</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/react_native1.png" alt="">
+                <p class="parrafo-img">REACT-NATIVE</p>
+            </a>
+            <a href="productos/producto1.html"><img style="background-color: white;height:100px;width: 100%;" src="static/an1.webp" alt="">
+                <p class="parrafo-img">ANDROID STUDIO</p>
+            </a>
+        </div>
+    </div>    
+    
+    <div style="display:grid;grid-template-columns:repeat(12,1fr);">
+        <div style="display: grid;grid-column: 5/8;">
+            <a href="productos/producto1.html"><img style="height:200px;width: 100%;" src="static/you.png" alt="">
+                <p class="parrafo-img">canal youtube</p>
+            </a>
+        </div>
+
+    </div>
+
+    <main>
+        <br>
+        <div style="display: grid;grid-template-columns: repeat(12, 1fr);background: gold;width: 100%;height: 100%;align-items: center;">
+            <div class="texto-about">
+                <h1>ACERCA DE:</h1>
+                <p>Somos un grupo de trabajadores con la mas alta capacidad de realizar postres de calidad, Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Distinctio qui eveniet laboriosam nulla dignissimos
+                    quisquam nemo, reprehenderit sapiente aut earum? Quas exercitationem necessitatibus ab corrupti
+                    voluptate temporibus magnam! Saepe, esse.</p>
+            </div>
+        </div>
+        <br>
+    </main>
+    <div class="aside">
+        <h1>contactame</h1>
+        <p> TE apreciamos mucho</p>
+        <p>Solo llamanos y te recibimos muy amablemente para que hagas un pedido de tu postre preferido sin novedad.
+        </p>
+        <label for="name">NOMBRE</label>
+        <br>
+        <input type="text" id=name name=name placeholder="ingresa tu nombre" required tabindex="1" />
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="text" id=email name=email placeholder="ingresa tu email" required tabindex="2" />
+        <br>
+        <label for="comment">COMENTARIO</label>
+        <br>
+        <textarea name="comment" id="comment" placeholder="ingresa texto" tabindex="4"></textarea>
+        <br>
+        <input name="submit" type="submit" id="submit" tabindex="5" value="ENVIAR" />
+        <br>
+        <br>
+    </div>
+    </div>
+    <div class="footer">
+        <img style="width:100px; height:100px" src="static/tui.png" alt=""><img style="width:100px; height:90px"
+            src="static/fb.png" alt="">
+        <h2>Email</h2>
+        <h2>gdave0930&copy;gmail.com</h2>
+        <h2>Localizacion</h2>
+        <img style="height:300px;width:800px;" src="static/go1.webp">
+        <h2>via perimetral trinipuerto alado del tia</h2>
+        <h1>Diseñado por &copy;Deybi Garcia</h1>
+    </div>
+
+</body>
+
+</html>
